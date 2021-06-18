@@ -6,8 +6,9 @@ def is_odd(a_number):
     """Return True if a_number is odd, and False if a_number is even.
 
     Look into modulo division using the '%' operator as one way of doing this.
-    """
-    return None
+    """ # Modulo division gives the remainder of a division 
+   
+    return a_number % 4 == 0  # If a_number is 8, the remainder will be 0, whereas if a_number is 9, there will be a remainder of 0.25
 
 
 def fix_it(moves=True, should_move=True):
@@ -25,8 +26,14 @@ def fix_it(moves=True, should_move=True):
     Most people write this function with 4 return statements. 
     As an extra challenge, see if you can get that down to three.
     """
-    return None
-
+    if moves and should_move:
+        return "No Problem"
+    elif moves and not should_move:
+        return "Duct Tape"
+    elif should_move and not moves:
+        return "WD-40"
+    elif not moves and not should_move:
+        return "No Problem"
 
 def loops_1a():
     """Make 10 stars.
@@ -35,18 +42,25 @@ def loops_1a():
     return a list of 10 items, each one a string with exacly one star in it.
     E.g.: ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
     """
-    return None
+    star_list = []
+    for i in range(10):
+        star_list.append('*')
+
+    return star_list 
 
 
-def loops_1c(number_of_items=5, symbol="#"):
+def loops_1c(number_of_items=6, symbol="#"):
     """Respond to variables.
 
     Using any method, return a list of number_of_items items, each one a
     string with exacly one symbol in it.
     E.g.: ['#', '#', '#', '#', '#']
     """
-    return None
+    symbol_list = []
+    for i in range(number_of_items):
+        symbol_list.append(symbol)
 
+    return symbol_list 
 
 def loops_2():
     """Make a big square starfield.
@@ -66,8 +80,15 @@ def loops_2():
             ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
           ]
     """
-    return None
+    star_square = []
+    for j in range(10):
+        star_list = []
+        for i in range(10):
+            star_list.append('*')
+        star_square.append(star_list)
 
+
+    return star_square  
 
 def loops_3():
     """Make a rising block of numbers.
@@ -90,11 +111,19 @@ def loops_3():
     TIP: notice that this needs to to return strings of numbers,
          so call str(number) to cast.
     """
-    return None
 
+    number_square = []
+    for i in range(10):
+        number_row = []
+        for j in range(10):
+            number_row.append(i)
+        number_square.append(number_row)
 
-def loops_4():
-    """Make a block of numbers that rises left to right.
+        print(number_square)
+        return number_square 
+
+def loops_4(): 
+     """Make a block of numbers that rises left to right.
 
     Return this:
     [
@@ -109,9 +138,16 @@ def loops_4():
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     ]
-    """
-    return None
+     """
 
+number_square = []
+for i in range(10):
+        number_square.append(range(10))
+
+        print(number_square)
+        return number_square
+
+       
 
 def loops_5():
     """Make the coordinates of the block.
@@ -137,7 +173,15 @@ def loops_5():
         "There are {} green bottles".format(8)
     you'll come to see the pros and cons of each over time.
     """
-    return None
+    number_square = []
+    for i in range(10):
+        coordinates_row = []
+        for j in range(5):
+            coordinates_row.append("(i" + str(i) + ", j" + str(j) + ")")
+        number_square.append(coordinates_row)
+
+        print(number_square)
+        return number_square 
 
 
 def loops_6():
@@ -160,7 +204,16 @@ def loops_6():
     You can use a variable.
     TIP: look out for the starting condition.
     """
-    return None
+    the_wedge = []
+
+    for i in range(10):
+        row = []
+        for j in range(i):
+            row.append(j)
+        the_wedge.append(row)
+    
+    return the_wedge 
+    
 
 
 def loops_7():
@@ -228,3 +281,4 @@ if __name__ == "__main__":
     little_printer(loops_5(), "loops_5")
     little_printer(loops_6(), "loops_6")
     little_printer(loops_7(), "loops_7")
+
