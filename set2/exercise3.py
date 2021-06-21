@@ -8,7 +8,7 @@ def is_odd(a_number):
     Look into modulo division using the '%' operator as one way of doing this.
     """ # Modulo division gives the remainder of a division 
    
-    return a_number % 4 == 0  # If a_number is 8, the remainder will be 0, whereas if a_number is 9, there will be a remainder of 0.25
+    return a_number % 2 != 0  
 
 
 def fix_it(moves=True, should_move=True):
@@ -30,10 +30,10 @@ def fix_it(moves=True, should_move=True):
         return "No Problem"
     elif moves and not should_move:
         return "Duct Tape"
-    elif should_move and not moves:
-        return "WD-40"
     elif not moves and not should_move:
         return "No Problem"
+    elif not moves and should_move:
+        return "WD-40"
 
 def loops_1a():
     """Make 10 stars.
@@ -111,19 +111,17 @@ def loops_3():
     TIP: notice that this needs to to return strings of numbers,
          so call str(number) to cast.
     """
-
     number_square = []
     for i in range(10):
         number_row = []
         for j in range(10):
-            number_row.append(i)
+            number_row.append(str(i))
         number_square.append(number_row)
 
-        print(number_square)
-        return number_square 
+    return number_square
 
 def loops_4(): 
-     """Make a block of numbers that rises left to right.
+    """Make a block of numbers that rises left to right.
 
     Return this:
     [
@@ -142,9 +140,11 @@ def loops_4():
 
     number_square = []
     for i in range(10):
-        number_square.append(range(10))
+        number_row = []
+        for j in range(10):
+            number_row.append(str(j))
+        number_square.append(number_row)
 
-        print(number_square)
     return number_square
 
 def loops_5():
@@ -179,7 +179,7 @@ def loops_5():
         number_square.append(coordinates_row)
 
         print(number_square)
-        return number_square 
+    return number_square 
 
 
 def loops_6():
@@ -206,10 +206,9 @@ def loops_6():
 
     for i in range(10):
         row = []
-        for j in range(i):
-            row.append(j)
+        for j in range(i+1):
+            row.append(str(j))
         the_wedge.append(row)
-    
     return the_wedge 
     
 
