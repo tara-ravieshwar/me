@@ -140,14 +140,12 @@ def loops_4():
     ]
      """
 
-number_square = []
-for i in range(10):
+    number_square = []
+    for i in range(10):
         number_square.append(range(10))
 
         print(number_square)
-        return number_square
-
-       
+    return number_square
 
 def loops_5():
     """Make the coordinates of the block.
@@ -237,9 +235,22 @@ def loops_7():
     This is a hard problem. Use lots of experimentation and draw
     lots of diagrams!
     """
-    return None
-
-
+    star_square = []
+    diff = 0
+    for j in range(5):
+        position_counter = 0
+        star_list = []
+        for i in range(9):
+            if position_counter in range(4-diff, 4+diff+1):
+                star_list.append('*')
+            else:
+                star_list.append(' ')
+            position_counter += 1
+        diff += 1
+        star_square.append(star_list)
+  
+    return star_square
+    
 def little_printer(some_kind_of_list, exercise_name):
     """Help to see what's going on.
 
