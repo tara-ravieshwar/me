@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+This week I learnt how to reformat my dataset to invert the coloumns and rows. It required a lot of trial and error, and I learnt the importance of taking breaks to have a clear headspace before returning to the screen. 

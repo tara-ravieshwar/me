@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+This week I had the exam, and I learnt about coding under pressure! I learnt how to divide my time between questions, and learnt the importance of using stack overflow to troubleshoot and see how more experienced coders would tackle a problem. 

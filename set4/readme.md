@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+This week I learnt and understood more about input/output formatting. I did research on the differnet output formattings, such as formatted string literals (f-strings), the string format, manual string format, etc.

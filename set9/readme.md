@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+This week, I made progress on my data audit. I decided to narrow my dataset to focus on how health affects ones gender. I'm having trouble formatting the dataset to plot graphs so I need to do more research on this. 

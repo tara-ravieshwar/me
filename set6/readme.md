@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+This week I learnt how to operate a an interactive jupyter notebook on python for my data project. I chose the topic of my data audit, and downloaded the dataset on VScode. I am still unsure about which aspect of the large data set to focus on. 

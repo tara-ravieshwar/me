@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+My main takeaway from this week was using ennumerate to get a counter and the value from the iterable at the same time. I am still slightly unclear on this topic, so I found this article to read later on: https://realpython.com/python-enumerate/
